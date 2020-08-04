@@ -1,0 +1,111 @@
+@import "../styles/colors";
+@import "../styles/typeface";
+
+#profilePage {
+    margin-left: 15vw;
+    padding: 1rem;
+    .verticalMargin20 {
+        margin: 20px 0;
+    }
+    .displayBlock {
+        display: block;
+    }
+    #businessHeader {
+        @extend %headline1;
+    }
+    #subtitle {
+        @extend %subtitle;
+    }
+    #body {
+        @extend %body;
+    }
+    #buttonGreen {
+        background-color: $primary;
+        color: $white;
+        min-width: 150px;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        @extend %body;
+        font-weight: 800;
+    }
+    #buttonGreenOutline {
+        background-color: $white;
+        color: $primary;
+        min-width: 150px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid $primary;
+        @extend %body;
+        font-weight: 800;
+        box-sizing: border-box;
+    }
+    #dropdown1 {
+        button {
+            background-color: $white;
+            color: $primary;
+            width: 150px;
+            height: 40px;
+            border: none;
+            @extend %body;
+            font-weight: 800;
+            box-sizing: border-box;
+        }
+        ul {
+            display:none;
+            list-style-type: none;
+            margin: 0;
+            color: $primary;
+            @extend %body;
+            font-weight: 800;
+            box-shadow: 5px 5px 10px $grey2;
+        }
+        ul.show {
+            display:block;
+            width: 110px;
+            border-radius: 5px;
+            list-style-type: none;
+            margin: 0;
+            color: $primary;
+            @extend %body;
+            font-weight: 800;
+            box-shadow: 5px 5px 5px $grey2;
+        }
+    }
+    #tagGreen {
+        background-color: $primary;
+        color: $white;
+        width: 70px;
+        height: 20px;
+        border-radius: 5px;
+        border: none;
+        font-size: 0.7rem;
+        font-weight: 800;
+        text-align: center;
+        padding-top: 2px;
+    }
+    #tagGreenOutline {
+        background-color: $white;
+        color: $primary;
+        width: 70px;
+        height: 20px;
+        border-radius: 5px;
+        border: 1px solid $primary;
+        font-size: 0.7rem;
+        font-weight: 800;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    #label {
+        background-color: $primary;
+        color: $white;
+        width: 80px;
+        height: 28px;
+        border-radius: 15px;
+        border: none;
+        @extend %body;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 5px;
+    }
+}

@@ -1,0 +1,50 @@
+@import "../styles/colors";
+
+nav {
+    background-image: linear-gradient(to bottom, #08A76B, #046641);
+    width: 15vw;
+    height: 100vh;
+    color: $white;
+    font-weight: 500;
+    box-sizing: border-box;
+    position: fixed;
+    .logo-container {
+        width: 100%;
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+    #profile {
+        padding-bottom: 2rem;
+        text-align: center;
+        img {
+            border-radius: 50%;
+        }
+        div {
+            margin: 0.5rem 0;
+            font-size: 1.3rem;
+        }
+    }
+    .link {
+        padding: 2rem 2.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .link-text {
+            width: 80%;
+            padding-left: 0.5rem;
+        }
+    }
+    .active {
+        background-color: $white-translucent-highlight;
+    }
+    a {
+        text-decoration: none;
+        color: $white;
+        &:hover {
+            text-decoration: none;
+            color: $white;
+        }
+    }
+}

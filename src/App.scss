@@ -1,0 +1,12 @@
+@import './styles/colors';
+
+$theme-colors: (
+  "primary": $primary
+);
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.cursor-not-allowed {
+  cursor: not-allowed;
+}

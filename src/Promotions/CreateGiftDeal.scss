@@ -1,0 +1,44 @@
+@import "../styles/colors";
+@import "../styles/typeface";
+@import "../styles/widgets";
+
+#create-gift-deal-page {
+    margin-left: 15vw;
+    padding: 1rem 2rem;
+    background-color: $grey1;
+    min-height: 100vh;
+    box-sizing: border-box;
+    .create-promotions-header{
+        @extend %headline1;
+        padding: 1rem 0;
+    }
+    #create-promotion-form {
+        background-color: $white;
+        width: 100%;
+        box-sizing: border-box;
+        #create-promotion-header {
+            padding: 15px 0 3rem 15px;
+            font-size: $body-size + 0.3rem;
+        }
+        .form-label {
+            font-weight: 600;
+        }
+    }
+    .create-promotion-section-header {
+        margin-top: 3rem;
+    }
+    .form-check .form-check-input{
+        width: 1rem;
+        height: 1rem;
+    }
+    .green-button {
+        @extend %button-green;
+        margin-bottom: 2rem;
+    }
+    .align-text-center {
+        text-align: center;
+    }
+    .row {
+        min-height: 3.2rem;
+    }
+}

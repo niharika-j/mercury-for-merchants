@@ -1,0 +1,41 @@
+@import './typeface';
+
+%button-green {
+    background-color: $primary;
+    color: $white;
+    min-width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    @extend %body;
+    font-weight: 800;
+    cursor: pointer;
+    a {
+        text-decoration: none;
+        color: $white;
+        &:hover {
+            text-decoration: none;
+            color: $white;
+        }
+    }
+}
+%button-green-outline {
+    background-color: $white;
+    color: $primary;
+    min-width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid $primary;
+    @extend %body;
+    font-weight: 800;
+    cursor: pointer;
+    box-sizing: border-box;
+    a {
+        text-decoration: none;
+        color: $primary;
+        &:hover {
+            text-decoration: none;
+            color: $primary;
+        }
+    }
+}
